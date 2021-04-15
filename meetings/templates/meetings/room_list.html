@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+{% block title %}ROOMS{% endblock %}
+
+{% block content %}
+    <h1>Meeting Rooms</h1>
+    <ul>
+        {% for room in rooms %}
+        <li>{{room.name}}</li>
+        {% endfor %}
+    </ul>
+
+<!--</body>-->
+<!--</html>-->
+{% endblock %}
